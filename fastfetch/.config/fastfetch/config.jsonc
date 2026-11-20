@@ -1,0 +1,70 @@
+{
+    "logo": {
+        "type": "file",
+        "source": "/home/alexlopez/.config/fastfetch/ez.txt",
+        "color": {
+            "1": "cyan"
+        },
+        "padding": {
+            "top": 2,
+            "right": 4
+        }
+    },
+    "display": {
+        "separator": "  ",
+        "color": "cyan"
+    },
+    "modules": [
+        {
+            "type": "os",
+            "key": "  OS",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "kernel",
+            "key": "  Kernel",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "shell",
+            "key": "  Shell",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "terminal",
+            "key": "  Terminal",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "cpu",
+            "key": "  CPU",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "gpu",
+            "key": "  GPU",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "memory",
+            "key": "  Memory",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "localip",
+            "key": "  IP",
+            "keyColor": "magenta"
+        },
+        {
+            "type": "wifi",
+            "key": "  WiFi",
+            "keyColor": "cyan"
+        },
+        "break",
+        {
+            "type": "colors",
+            "paddingLeft": 1,
+            "symbol": "circle"
+        }
+    ]
+}

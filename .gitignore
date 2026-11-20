@@ -1,0 +1,23 @@
+# Secrets and keys
+.env
+*.key
+*.pem
+id_*
+*secret*
+*token*
+
+# Personal, machine-specific config
+.bashrc.local
+
+# Junk and caches
+*.bak
+*.old
+*.log
+*.pacnew
+.DS_Store
+**/cache/
+**/.cache/
+
+# Fish: local state that changes on its own
+fish/.config/fish/fish_variables
+wallpapers/
