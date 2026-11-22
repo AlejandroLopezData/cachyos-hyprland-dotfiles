@@ -1,10 +1,7 @@
 {
     "logo": {
-        "type": "file",
-        "source": "/home/alexlopez/.config/fastfetch/ez.txt",
-        "color": {
-            "1": "cyan"
-        },
+        "type": "builtin",
+        "source": "arch",
         "padding": {
             "top": 2,
             "right": 4
