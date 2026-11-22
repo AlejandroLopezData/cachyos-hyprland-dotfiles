@@ -5,7 +5,16 @@
 # If not running interactively, do nothing
 [[ $- != *i* ]] && return
 
-fastfetch
+# fastfetch: pick the logo size depending on the terminal width
+ff() {
+  local cols
+  cols=$(tput cols 2>/dev/null || echo 80)
+  if   [ "$cols" -ge 102 ]; then fastfetch
+  elif [ "$cols" -ge 80 ];  then fastfetch --logo arch_small
+  elif [ "$cols" -ge 60 ];  then fastfetch --logo none
+  fi
+}
+ff
 
 # ble.sh: grey history-based suggestions + syntax highlighting.
 # Loaded first, attached at the very end of this file.
