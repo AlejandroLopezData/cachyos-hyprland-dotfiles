@@ -28,7 +28,7 @@ Back up your current config first, then:
 
     git clone https://github.com/AlejandroLopezData/dotfiles ~/dotfiles
     cd ~/dotfiles
-    stow hypr waybar kitty starship fastfetch bash wallpapers
+    stow hypr waybar rofi kitty starship fastfetch bash wallpapers
 
 Stow refuses to overwrite existing files. If it reports a conflict,
 move the old file away and run it again.

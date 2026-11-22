@@ -1,0 +1,9 @@
+configuration {
+    modi:           "drun";
+    font:           "JetBrainsMono Nerd Font 13";
+    show-icons:     true;
+    icon-theme:     "Papirus-Dark";
+    drun-display-format: "{name}";
+    display-drun:   "󰍉  Apps";
+}
+@theme "catppuccin-mocha"
