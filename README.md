@@ -21,8 +21,13 @@ rofi and kitty, all in **Catppuccin Mocha**. Managed with GNU Stow.
 
 ## Requirements
 
-hyprland, waybar, rofi, awww, kitty, starship, fastfetch, stow, ble.sh
-and JetBrainsMono Nerd Font.
+Install the packages first (Hyprland 0.55+ is required):
+
+    sudo pacman -S hyprland waybar rofi awww kitty starship fastfetch stow \
+      papirus-icon-theme ttf-jetbrains-mono-nerd
+
+ble.sh is not in the official repos, so install it from the AUR.
+
 
 ## Install
 
