@@ -43,3 +43,17 @@ move the old file away and run it again.
 - **Wallpaper:** `fondo2.jpg` is the default wallpaper. The `wallpapers` package
   puts it in `~/Pictures/wallpapers/` and `hyprland.lua` sets it on startup with awww.
   To use your own, drop an image in that folder and edit the path in `hyprland.lua`.
+
+## Screenshots
+
+![Desktop](screenshots/desktop.jpg)
+*Desktop with the floating three-island waybar and the default wallpaper.*
+
+![Rofi launcher](screenshots/rofi.jpg)
+*Rofi in drun mode with the Catppuccin Mocha theme.*
+
+![Terminal](screenshots/terminal.jpg)
+*Kitty with fastfetch and the starship prompt.*
+
+![Terminal 2](screenshots/terminal2.jpg)
+*Another terminal view.*
