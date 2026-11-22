@@ -1,59 +1,46 @@
-# dotfiles
+# cachyos-hyprland-dotfiles
 
-Personal Hyprland setup for CachyOS / Arch, themed with **Catppuccin Mocha**
-and managed with [GNU Stow](https://www.gnu.org/software/stow/).
+My CachyOS desktop: Hyprland (Lua config) with a floating three-island waybar,
+rofi and kitty, all in **Catppuccin Mocha**. Managed with GNU Stow.
 
-Built for Hyprland 0.57+, which uses a Lua config (`hyprland.lua`)
-instead of the old `hyprland.conf`.
+![Desktop](screenshots/desktop.jpg)
+![Rofi](screenshots/rofi.jpg)
+![Terminal](screenshots/terminal.jpg)
+![Terminal 2](screenshots/terminal2.jpg)
 
 ## What's inside
 
-| Package     | What it does                                                          |
-|-------------|-----------------------------------------------------------------------|
-| `hypr`      | Hyprland Lua config, autostart for wallpaper and bar, launcher script |
-| `waybar`    | Top bar split into three floating islands                             |
-| `kitty`     | Terminal: JetBrainsMono Nerd Font, 0.85 opacity, blur                 |
-| `starship`  | Minimal one-line prompt in Catppuccin colors                          |
-| `fastfetch` | System info shown when opening a terminal                             |
-| `bash`      | `.bashrc` with ble.sh and starship                                    |
+- `hypr`: Hyprland config (needs 0.57+, which uses `hyprland.lua`)
+- `waybar`: top bar with workspaces, clock, volume, network, CPU and RAM
+- `rofi`: app launcher
+- `kitty`: terminal (JetBrainsMono Nerd Font, transparency and blur)
+- `starship`: one-line prompt
+- `fastfetch`: Arch logo that shrinks with the window width
+- `bash`: `.bashrc` with ble.sh
+- `wallpapers`: default wallpaper
 
 ## Requirements
 
-hyprland, waybar, awww, kitty, starship, fastfetch, stow, ble.sh
-and the JetBrainsMono Nerd Font.
+hyprland, waybar, rofi, awww, kitty, starship, fastfetch, stow, ble.sh
+and JetBrainsMono Nerd Font.
 
 ## Install
 
-Back up your current config first, then:
+Clone it into `~/dotfiles` (Stow needs it there) and link what you want:
 
-    git clone https://github.com/AlejandroLopezData/dotfiles ~/dotfiles
+    git clone https://github.com/AlejandroLopezData/cachyos-hyprland-dotfiles ~/dotfiles
     cd ~/dotfiles
     stow hypr waybar rofi kitty starship fastfetch bash wallpapers
 
-Stow refuses to overwrite existing files. If it reports a conflict,
-move the old file away and run it again.
+Stow won't overwrite existing files. If it reports a conflict, move
+the old file away and run it again.
 
 ## Notes
 
-- **Personal shell config:** `.bashrc` loads `~/.bashrc.local` if it exists.
-  Put machine-specific things there; it is not tracked by git.
-- **Launcher script:** `hypr/.config/hypr/setup-launcher.sh` hides most desktop
-  entries from the app launcher and creates Netflix and Chess.com web-app entries.
-  Read it before running it and edit the list to your own apps.
-- **Wallpaper:** `fondo2.jpg` is the default wallpaper. The `wallpapers` package
-  puts it in `~/Pictures/wallpapers/` and `hyprland.lua` sets it on startup with awww.
-  To use your own, drop an image in that folder and edit the path in `hyprland.lua`.
-
-## Screenshots
-
-![Desktop](screenshots/desktop.jpg)
-*Desktop with the floating three-island waybar and the default wallpaper.*
-
-![Rofi launcher](screenshots/rofi.jpg)
-*Rofi in drun mode with the Catppuccin Mocha theme.*
-
-![Terminal](screenshots/terminal.jpg)
-*Kitty with fastfetch and the starship prompt.*
-
-![Terminal 2](screenshots/terminal2.jpg)
-*Another terminal view.*
+- The wallpaper is set on startup in `hyprland.lua` with awww.
+  To use another one, change the path there.
+- `.bashrc` loads `~/.bashrc.local` if it exists. Put personal stuff there;
+  it is not tracked.
+- `hypr/.config/hypr/setup-launcher.sh` hides most apps from the launcher
+  and adds Netflix and Chess.com entries. Read it and edit the list before
+  running it.
